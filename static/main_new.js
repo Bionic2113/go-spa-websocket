@@ -1,4 +1,4 @@
-var socket = new WebSocket("ws://localhost:8080/ws");
+var socket = new WebSocket("ws://localhost:9080/ws");
 var usersTable = document.getElementById("users")
 var usersTBody =  document.createElement("tbody")
 usersTable.appendChild(usersTBody)

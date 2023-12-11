@@ -1,3 +1,5 @@
+drop database if exists sushkof;
+
 create database sushkof;
 
 use sushkof;
@@ -31,11 +33,11 @@ create table tasks(
 
 
 insert into users(email, age, admin, name, password) values 
-('kekok@mail.ru', 30, false, 'Nikita', '$2a$10$o8lWXGHd5Xw2JKV8IDIV8.OXTDjqk.qpAn1R2DLPWvtNnKh4tMXRy'), --'qwerty'
-('admin@mail.ru', 11, true, 'Misha', '$2a$10$xoZpp.Iis0S1aRtj8HkIBu0Cz6WNsqUbVzJWR/Sep0lJqxvOEhNwu'), --'00werty11'
-('aaaa@aaa.ro', 22, false, 'Masha', '$2a$10$oFKT4rVIHKUAmf1zHuyiJeEwx1jMfujfbbVGsj/ksDAGkGa2S1tgO'), --'zima'
-('kdawlkwd@aa.ri', 22, false, 'OOOad', '$2a$10$GRnf4aht7Y9orALfc1TZ0.Gxy3nB6PJgG/jbRXaveKKtRWz8VuPBC'), --'daow'
-('lafwia@dlaad.fak', 22, false, 'adwkda', '$2a$10$4rtbLjLo6XTHMn.aLTYU.OKsI1dHB4BUU5E0Q/W4uNxES9gMyIBMe'), -- 'dadwaa'
+('kekok@mail.ru', 30, false, 'Nikita', '$2a$10$o8lWXGHd5Xw2JKV8IDIV8.OXTDjqk.qpAn1R2DLPWvtNnKh4tMXRy'), #'qwerty'
+('admin@mail.ru', 11, true, 'Misha', '$2a$10$xoZpp.Iis0S1aRtj8HkIBu0Cz6WNsqUbVzJWR/Sep0lJqxvOEhNwu'), #'00werty11'
+('aaaa@aaa.ro', 22, false, 'Masha', '$2a$10$oFKT4rVIHKUAmf1zHuyiJeEwx1jMfujfbbVGsj/ksDAGkGa2S1tgO'), #'zima'
+('kdawlkwd@aa.ri', 22, false, 'OOOad', '$2a$10$GRnf4aht7Y9orALfc1TZ0.Gxy3nB6PJgG/jbRXaveKKtRWz8VuPBC'), #'daow'
+('lafwia@dlaad.fak', 22, false, 'adwkda', '$2a$10$4rtbLjLo6XTHMn.aLTYU.OKsI1dHB4BUU5E0Q/W4uNxES9gMyIBMe'); #'dadwaa'
 
 insert into tasks(title, description, status, time_start, time_finish, user_email) values
 ('Gnom','dadadad','pending', UNIX_TIMESTAMP(), UNIX_TIMESTAMP() + 432000, 'kekok@mail.ru'),
