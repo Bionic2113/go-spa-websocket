@@ -1,0 +1,123 @@
+.modal {
+  display: none; /*  Скрыта по умолчанию  */ 
+  position: fixed; /*  Запрещает прокрутку  */
+  z-index: 1; /*  Ставит на передний план  */
+  /* padding-top: 100px; /*  Расположение по центру  */
+  left: 0;
+  top: 0;
+  width: 100%; /*  Полная ширина  */ 
+  height: 100%; /*  Полная высота  */ 
+  overflow: auto; /*  Отображение полосы прокрутки  */
+  background-color: rgb(0,0,0); /*  Цвет заднего фона  */
+  background-color: rgba(0,0,0,0.4); /*  Черный с прозрачностью  */
+}
+
+.modal-content {
+  /* background-color: #fefefe; */
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #333;
+  color: #f2f2f2;
+
+}
+
+.close {
+  float: right;
+  color: #aaa;
+
+}
+
+.notification {
+    /* position: fixed; */
+    /* transform: translateX(75%); */
+    margin: auto;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: #f44336;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 9999;
+}
+
+.stop-user {
+  color: red;
+  font-weight: bold;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+table {
+	width: 100%;
+	margin-bottom: 20px;
+	border: 5px solid #527d5b;
+	border-top: 5px solid #388b34;
+	border-bottom: 3px solid #fff;
+	border-collapse: collapse; 
+	outline: 3px solid #4d7b4a;
+	font-size: 15px;
+	background: #353535!important;
+}
+table th {
+	font-weight: bold;
+	padding: 7px;
+	background: #388b3c;
+	border: none;
+	text-align: left;
+	font-size: 15px;
+	border-top: 3px solid #44944a;
+	border-bottom: 3px solid #4c8948;
+}
+table td {
+	padding: 7px;
+	border: none;
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #000;
+	font-size: 15px;
+}
+table tbody tr:nth-child(even){
+	background: #4e4c4c!important;
+}
+
+/* Темная тема */
+body.dark-mode {
+  background-color: #333;
+  color: #f2f2f2;
+}
+
+
+
+
+.modal-header {
+  background-color: #fefefe;
+  padding: 10px;
+  text-align: center;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal-footer {
+  padding: 10px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+
