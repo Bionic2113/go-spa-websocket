@@ -19,4 +19,4 @@ services:
       - "9080:9080"
     depends_on:
       - mydb
-    command: sh -c "sleep 20  && ./main -h mydb" 
+    command: sh -c "sleep 20  && ./main -h 192.168.1.30" # для Mac OS нужно указать свой ip 
